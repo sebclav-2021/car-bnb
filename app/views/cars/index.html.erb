@@ -1,0 +1,13 @@
+<div class = "container">
+  <h1>Our Cars</h1>
+  <div class = "Car">
+    <h2>Choose the car you want to book</h2>
+    <ul><% @cars.each do |car|%>
+          <%= car.brand %>
+          <%= car.model %>
+          <%= car.price %> €
+          <%= image_tag ("#{car.car_picture}") %>
+        <% end %> 
+    <ul>
+  </div>
+</div>
