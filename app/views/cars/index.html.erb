@@ -3,10 +3,10 @@
   <div class = "Car">
     <h2>Choose the car you want to book</h2>
     <ul><% @cars.each do |car|%>
-          <%= car.brand %>
-          <%= car.model %>
-          <%= car.price %> €
-          <%= image_tag ("#{car.car_picture}") %>
+          <%= image_tag car.car_picture, width: 400 %>
+          <h1><%= car.brand %> <%= car.model %></h1>
+          <p><%= car.price %>€ per day</p>
+          <p><%= link_to "Book", car_path(car) %></p>
         <% end %> 
     <ul>
   </div>
