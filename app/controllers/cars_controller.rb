@@ -2,6 +2,7 @@ class CarsController < ApplicationController
   
   def index
     @cars = Car.all
+    @bookings = Booking.all
   end
 
   def show
