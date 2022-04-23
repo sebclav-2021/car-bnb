@@ -6,11 +6,11 @@
   </div>
   
   <div class="select-car">
-    <ul><% @cars.each do |car|%>
-          <%= image_tag car.car_picture, width: 400 %>
+    <ul class="list-car text-align" ><% @cars.each do |car|%>
+          <%= image_tag car.car_picture, class: "image-car", width: 400 %>
           <h1><%= car.brand %> <%= car.model %></h1>
           <p><%= car.price %>€ per day</p>
-          <p><%= link_to "See", car_path(car) %></p>
+          <p><%= link_to "See", car_path(car), class: "button-blue" %></p>
         <% end %> 
     <ul>
   </div>
