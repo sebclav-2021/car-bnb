@@ -8,4 +8,9 @@ class CarsController < ApplicationController
     @car = Car.find(params[:id])
     @booking = Booking.new
   end
+
+  def booking_dashboard
+    @bookings = Booking.all
+  end
+
 end

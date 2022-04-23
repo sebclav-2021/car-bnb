@@ -1,7 +1,11 @@
 <div class = "container">
   <h1>Our Cars</h1>
-  <div class = "Car">
+  
+  <div class = "Cars">
     <h2>Choose the car you want to book</h2>
+  </div>
+  
+  <div class="select-car">
     <ul><% @cars.each do |car|%>
           <%= image_tag car.car_picture, width: 400 %>
           <h1><%= car.brand %> <%= car.model %></h1>
