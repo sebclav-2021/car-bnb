@@ -1,12 +1,16 @@
 <div class = "container">
   <h1>Our Cars</h1>
-  <div class = "Car">
+  
+  <div class = "Cars">
     <h2>Choose the car you want to book</h2>
-    <ul><% @cars.each do |car|%>
-          <%= car.brand %>
-          <%= car.model %>
-          <%= car.price %> €
-          <%= image_tag ("#{car.car_picture}") %>
+  </div>
+  
+  <div class="select-car">
+    <ul class="list-car text-align" ><% @cars.each do |car|%>
+          <%= image_tag car.car_picture, class: "image-car", width: 400 %>
+          <h1><%= car.brand %> <%= car.model %></h1>
+          <p><%= car.price %>€ per day</p>
+          <p><%= link_to "See", car_path(car), class: "button-blue" %></p>
         <% end %> 
     <ul>
   </div>

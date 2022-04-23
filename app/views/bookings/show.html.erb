@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Your booking</h1>
+  <p><%= @car.brand %> <%= @car.model %></p>
+  <p>From <%= @booking.start_date %> to <%= @booking.end_date %></p>
+  <!-- <p>For <%= @car.price * (@booking.end_date - @booking.start_date).to_i %></p>%> -->
+  <p> Total of your reservation : <%= @booking.total_price %>€</p>
+  <p><%= link_to "Home", root_path %>
+    <%= link_to "See all my reservations", dashboard_path %>
+  </p>
+
+  
+</div>
+
