@@ -4,8 +4,8 @@
   <p>From <%= @booking.start_date %> to <%= @booking.end_date %></p>
   <!-- <p>For <%= @car.price * (@booking.end_date - @booking.start_date).to_i %></p>%> -->
   <p> Total of your reservation : <%= @booking.total_price %>€</p>
-  <p><%= link_to "Home", root_path %>
-    <%= link_to "See all my reservations", dashboard_path %>
+  <p><%= link_to "Home", root_path , class: "button-blue"%>
+    <%= link_to "See all my reservations", dashboard_path, class: "button-blue" %>
   </p>
 
   

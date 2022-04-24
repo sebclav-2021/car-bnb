@@ -1,0 +1,12 @@
+.button-blue {
+  text-decoration: none;
+  background-color: rgba(63, 63, 255,0.8);
+  color: white;
+  border-radius: 4px;
+  padding: 8px 32px;
+  border: 1px solid transparent;
+}
+
+.button-blue:hover {
+  background-color: rgba(63, 63, 255,0.6);
+}
