@@ -7,9 +7,10 @@
     <p><%= @car.price %>€ per day</p>
   <ul>
 
-  <%= simple_form_for([@car,@booking]) do |f| %>
-    <%= f.input :start_date %>
-    <%= f.input :end_date %>
-    <%= f.submit "Book" %>
-  <% end %> 
+  
+    <%= simple_form_for([@car,@booking]) do |f| %>
+      <%= f.input :start_date %>
+      <%= f.input :end_date %>
+      <%= f.submit "Book", class: "button-blue" %>
+    <% end %>
 </div>
